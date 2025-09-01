@@ -1,50 +1,57 @@
+# 🚀 Projeto Full Stack - Lista de Tarefas
 
-# Projeto full stack
-Projeto full stack para resolução da atividade da matéria de linguagem de programação, uma aplicação web para organizar suas tarefas em listas.
+Projeto full stack para resolução da atividade da matéria de linguagem de programação. Uma aplicação web para organizar suas tarefas em listas.
 
-#💻 Tecnologias utilizadas
-Backend: Java 21, Spring Boot, Maven
-Frontend: Angular 16+, TypeScript
-Banco de dados: Em memória
+## 💻 Tecnologias utilizadas
 
-#🚀 Como rodar o projeto
+![Java](https://img.shields.io/badge/Java-21-blue?logo=java) 
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-2.7-green?logo=springboot) 
+![Maven](https://img.shields.io/badge/Maven-3.8-blue?logo=apachemaven) 
+![Angular](https://img.shields.io/badge/Angular-16-red?logo=angular) 
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript) 
+![H2 Database](https://img.shields.io/badge/H2%20Database-InMemory-lightgrey?logo=h2database)
 
-⚙️ Backend
-Clone este repositório para o seu ambiente local:
+## 📦 Como rodar o projeto
 
-Bash
+### ⚙️ Backend
 
+1. Clone este repositório:
+
+```bash
 git clone https://github.com/joaogabriel-coder/Projeto-full.git
-Navegue até o diretório do backend:
 
-Bash
+Entre no diretório do backend:
 
 cd todolist-api
 
-Bash
+Rode o servidor:
 
 mvn spring-boot:run
-O servidor de backend estará rodando em http://localhost:8080/h2-console.
 
-#🖥️ Frontend
-Navegue até o diretório do frontend:
+O backend estará disponível em: http://localhost:8080/h2-console
 
-Bash
+
+🖥️ Frontend
+
+Entre no diretório do frontend:
 
 cd listadetarefas-web
-Instale as dependências do Node.js:
 
-Bash
+
+Instale as dependências:
 
 npm install
-Inicie o servidor de desenvolvimento do Angular:
 
-Bash
+
+Inicie o servidor Angular:
 
 ng serve
-O frontend estará disponível em http://localhost:4200.
 
-#📄 Licença
-Este projeto está sob a licença  MIT 
 
-Autor: João Gabriel Negrão da Costa - https://github.com/joaogabriel-coder
+O frontend estará disponível em: http://localhost:4200
+
+📄 Licença
+
+Este projeto está sob a licença MIT.
+
+Autor: João Gabriel Negrão da Costa
