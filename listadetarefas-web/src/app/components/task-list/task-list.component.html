@@ -1,0 +1,32 @@
+<input type="checkbox" id="darkmode" class="mode" (change)="toggleDarkMode($event)" />
+<label for="darkmode"></label>
+
+<div class="container">
+  <h1 class="title">Minha Lista de Tarefas</h1>
+
+  <form class="form-add" (ngSubmit)="adicionarTarefa()">
+    <input
+      type="text"
+      placeholder="O que precisa ser feito?"
+      [(ngModel)]="novaTarefa.descricao"
+      name="descricao"
+      required
+    />
+    <button type="submit">Adicionar</button>
+  </form>
+
+  <ul class="task-list">
+    <li *ngFor="let tarefa of tarefas">
+      <input type="checkbox" [(ngModel)]="tarefa.concluida" (change)="atualizarStatus(tarefa)" />
+      <input type="button" value="{{ tarefa.descricao }}" class="edit-input" />
+      <button class="delete-btn" (click)="deletarTarefa(tarefa.id)">×</button>
+      <button class="edit-btn" (click)="editarTarefa(tarefa.id)">✎</button>
+    </li>
+  </ul>
+</div>
+
+<footer>
+  <a href="https://github.com/joaogabriel-coder" target="_self" class="rodape"
+    >@João-Gabriel-coder</a
+  >
+</footer>
